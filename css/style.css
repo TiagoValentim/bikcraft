@@ -1,86 +1,40 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/*globais*/
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cor.css";
+@import "./global/header.css";
 
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
+/*utilidades*/
+@import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
-a {
-  text-decoration: none;
-}
-.header-bg {
-  background-color: #000000;
-}
+/*home*/
+@import "./home/introducao.css";
+@import "./home/bicicletas-lista.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguros.css";
+@import "./home/footer.css";
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/*termos*/
+@import "./termos/termos.css";
 
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+/*bicicletas*/
+@import "./bicicletas/bicicletas.css";
+@import "./bicicletas/bicicleta.css";
 
-.header-menu a {
-  color: #ffffff;
-  display: inline-block;
-  padding: 16px 0px;
-  font-size: 18px;
-  position: relative;
-}
+/*seguros - primeira parte do css "./home/seguros.css";*/
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
 
-.header-menu a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: #ffffff;
-  margin-top: 4px;
-  width: 0px;
-  transition: 0.3s;
-  position: absolute;
-}
+/*contato*/
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+@import "./contato/form.css";
 
-.header-menu a:hover::after {
-  width: 100%;
-}
+/*orcamento*/
+@import "./orcamento/orcamento.css";
 
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-  .header-menu a {
-    background-color: #111111;
-    padding: 12px 16px;
-    border-radius: 4px;
-  }
-  .header-menu a:hover {
-    background-color: #2e2e2e;
-  }
-  .header-menu a::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
+/*animacao*/
+@import "./utilidades/animacao.css";
